@@ -25,3 +25,31 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.character-item {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: character-appear 0.5s ease forwards;
+}
+
+@keyframes character-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.item-1 {
+  animation-delay: 0s;
+}
+
+.item-2 {
+  animation-delay: 0.5s;
+}
+
+.item-3 {
+  animation-delay: 1s;
+}
+
+/* Add more item classes with appropriate animation delays */
